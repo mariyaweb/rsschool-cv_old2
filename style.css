@@ -1,0 +1,197 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+@font-face{
+   font-family: 'Montserrat';
+   src: url("assets/fonts/static/Montserrat-Regular.ttf");
+   font-weight: 400;
+}
+@font-face{
+   font-family: 'Montserrat';
+   src: url("assets/fonts/static/Montserrat-Bold.ttf");
+   font-weight: 700;
+}
+body {
+   font-family: 'Montserrat';
+   font-size: 16px;
+   font-weight: 400;
+   color: #3C3C3C;
+   min-height: 100%;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+}
+* {
+   box-sizing: border-box;
+}
+header {
+   height: 80px;
+   background-color:#4B6197;
+   color: white;
+}
+.main {
+   flex: 1 1 auto;
+   padding-bottom: 100px;
+}
+/* ширина контентной части и выравнивание по середине */
+.conteiner {
+   max-width: 1160px; 
+   margin: 0 auto;
+}
+.menu__list {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.menu__list a {
+   color: #ffffff;
+   text-decoration: none;  
+   transition: 0.5s;
+   padding: 0px 48px;
+   line-height: 80px;
+ }
+ .menu__list a:hover {
+   color: #83ffda;
+ }
+html {
+   scroll-behavior: smooth; 
+ }
+
+ .profile__row {
+   display: flex;
+   flex-direction: column;
+   margin: 100px 0;
+   align-items:center;
+}
+.profile__photo {
+   padding-bottom: 30px;
+}
+h1 {
+   font-family: 'Montserrat';
+   color: #3C3C3C;
+   font-size: 22px;
+   font-weight: 700;
+   text-align: center;
+}
+.profile__name {
+   padding-bottom: 15px;
+}
+.profile__profession {
+   font-size: 22px;
+   font-weight: 700;
+   text-align: center;
+   color: #4B6197;
+}
+.information__row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0px -20px;
+   flex-wrap:wrap;
+}
+
+.information__column {
+   width: 50%;
+   padding: 0px 20px;
+   display: flex;
+   flex-direction: column;
+}
+.information__item {
+   flex: 1 1 auto;
+   background-color: #f7f7f7;
+}
+h2 {   
+   color: white;
+   line-height: 20px;
+   padding: 20px 0px 20px 40px;
+   font-size: 22px;
+   line-height: 27px;
+   font-weight: 700;
+   background-color: #4B6197;
+}
+.information__body {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   padding: 25px 40px 60px 40px;
+   background-color: #f7f7f7;
+}
+.information__body p {
+   padding-bottom: 10px;
+}
+
+.information__list-item {
+   padding: 0 0 10px 0;
+}
+.information__list-item-list {
+   padding: 0 0 0 22px;
+}
+.contacts__list li{
+   list-style-type: none;
+   line-height: 34px;
+   padding: 0 0 0 34px;
+   color: #3C3C3C;
+}
+
+.contacts__list a {
+   color: #3C3C3C;
+   text-decoration: underline;
+   transition: 0.5s;
+}
+.contacts__list a:hover {
+color: #4B6197;
+}
+.contacts__list a:visited {
+   color: #3C3C3C;
+  }
+
+.contacts__list li:nth-child(1) {
+   background: url('assets/img/Telegram.png') left no-repeat;
+}
+.contacts__list li:nth-child(2) {
+   background: url('assets/img/Linkedin.png') left no-repeat;
+}
+.contacts__list li:nth-child(3) {
+   background: url('assets/img/Behance.png') left no-repeat;
+}
+.contacts__list li:nth-child(4) {
+   background: url('assets/img/Github.png') left no-repeat;
+}
+.contacts__list li:nth-child(5) {
+   background: url('assets/img/Discord.png') left no-repeat;
+}
+.contacts__list li:nth-child(6) {
+   background: url('assets/img/Mail.png') left no-repeat;
+}
+.footer {
+   background-color: #4B6197;
+   height: 100px;
+}
+.footer__row {
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer__row a {
+   color: #ffffff;
+   text-decoration: none;
+   transition: 0.5s;
+}
+.footer__row a:hover {
+color: #83ffda;
+}
